@@ -35,7 +35,11 @@ When you're going to release a new version of the stack, you should:
     git tag -f 1.1
     git tag 1.1-20160731
 
-3. Push tags to the repo::
+3. Push the changes and the tags to the repo::
+
+    git push -f origin master <tag1> <tag2>
+
+  Example::
 
     git push -f origin master 1.1 1.1-20160731
 
