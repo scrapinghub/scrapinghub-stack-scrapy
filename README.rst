@@ -37,17 +37,11 @@ When you're going to release a new version of the stack, you should:
 
 3. Push tags to the repo::
 
-    git push -f --tags
+    git push -f origin master 1.1 1.1-20160731
 
-  Tags should be pushed before pushing changes because otherwise build will not be triggered and developer will be required to find the build in drone and trigger it manually again after tags are pushed.
+  Tags should be pushed at the same time when pushing changes (or before it) because otherwise build will not be triggered and developer will be required to find the build in drone and trigger it manually again after tags are pushed.
 
-  Tags should be pushed with ``-f`` almost all the time because we override tags frequently.
-
-4. Push the changes only after tags::
-
-    git push
-
-5. After release it's necessary to check that tag is updated both in github and hub.docker.com:
+4. After release it's necessary to check that tag is updated both in github and hub.docker.com:
 
   - https://github.com/scrapinghub/scrapinghub-stack-scrapy/releases
   - https://hub.docker.com/r/scrapinghub/scrapinghub-stack-scrapy/tags/
