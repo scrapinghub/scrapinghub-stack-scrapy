@@ -33,7 +33,7 @@ scrapy-crawlera==1.1.0
 scrapy-dotpersistence==0.2.2
 scrapy-pagestorage==0.1.0
 scrapy-splash==0.6.1
-Scrapy==1.1.0rc4          # via scrapinghub-entrypoint-scrapy, scrapy-dotpersistence, scrapy-pagestorage, scrapylib
+Scrapy==1.1.1             # via scrapinghub-entrypoint-scrapy, scrapy-dotpersistence, scrapy-pagestorage, scrapylib
 scrapylib==1.7.0
 service-identity==16.0.0  # via scrapy
 six==1.10.0               # via cryptography, parsel, pyopenssl, python-dateutil, retrying, scrapy, w3lib
