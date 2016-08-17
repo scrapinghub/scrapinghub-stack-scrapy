@@ -27,7 +27,7 @@ queuelib==1.4.2           # via scrapy
 requests==2.10.0          # via hubstorage
 retrying==1.3.3           # via hubstorage
 s3cmd==1.6.1              # via scrapy-dotpersistence
-scrapinghub-entrypoint-scrapy==0.8.5
+scrapinghub-entrypoint-scrapy==0.8.6
 
 scrapy-crawlera==1.1.0
 scrapy-dotpersistence==0.2.2
