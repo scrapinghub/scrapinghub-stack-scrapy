@@ -15,5 +15,11 @@ scrapy-crawlera
 scrapy-dotpersistence
 scrapy-pagestorage
 
+# required by Monkeylearn addon
+monkeylearn
+# required by Monitoring addon egg
+six
+Jinja2
+slackclient
 # required by Images addon
 boto
