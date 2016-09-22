@@ -3,7 +3,7 @@
 #   pip-compile --output-file requirements.txt requirements.in
 #
 
-Scrapy==1.1.0rc4
+Scrapy==1.1.1
 
 # scrapinghub glue
 scrapinghub-entrypoint-scrapy
@@ -15,5 +15,11 @@ scrapy-crawlera
 scrapy-dotpersistence
 scrapy-pagestorage
 
+# required by Monkeylearn addon
+monkeylearn
+# required by Monitoring addon egg
+six
+Jinja2
+slackclient
 # required by Images addon
 boto
