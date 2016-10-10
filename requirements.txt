@@ -17,8 +17,10 @@ hubstorage==0.23.1        # via scrapinghub-entrypoint-scrapy, scrapy-pagestorag
 idna==2.1                 # via cryptography
 Jinja2==2.8
 jmespath==0.9.0           # via botocore
+jsonschema==2.5.1
 lxml==3.6.1               # via parsel, scrapy
 MarkupSafe==0.23          # via jinja2
+mock==1.0.1               # via schematics
 monkeylearn==0.3.5
 parsel==1.0.2             # via scrapy
 pyasn1-modules==0.0.8     # via service-identity
@@ -27,11 +29,13 @@ pycparser==2.14           # via cffi
 PyDispatcher==2.0.5       # via scrapy
 pyopenssl==16.0.0         # via scrapy, service-identity
 python-dateutil==2.5.3    # via botocore
+python-slugify==1.2.1
 queuelib==1.4.2           # via scrapy
 requests==2.10.0          # via hubstorage, monkeylearn, slackclient
 retrying==1.3.3           # via hubstorage
 rsa==3.4.2                # via awscli
 s3transfer==0.1.1         # via awscli
+schematics==1.0.4
 scrapinghub-entrypoint-scrapy==0.8.8
 scrapy-crawlera==1.1.0
 scrapy-dotpersistence==0.3.0
@@ -43,6 +47,7 @@ service-identity==16.0.0  # via scrapy
 six==1.10.0
 slackclient==1.0.1
 Twisted==16.3.0           # via scrapy
+Unidecode==0.4.19         # via python-slugify
 w3lib==1.14.3             # via parsel, scrapy
 websocket-client==0.37.0  # via slackclient
 zope.interface==4.2.0     # via twisted
