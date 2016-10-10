@@ -20,4 +20,7 @@ monkeylearn
 # required by Monitoring addon egg
 six
 Jinja2
+jsonschema
+schematics==1.0.4
 slackclient
+python-slugify
