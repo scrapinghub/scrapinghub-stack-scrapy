@@ -9,7 +9,9 @@ ONBUILD RUN test -n $APT_PROXY && echo 'Acquire::http::Proxy \"$APT_PROXY\";' \
 # TERM needs to be set here for exec environments
 # PIP_TIMEOUT so installation doesn't hang forever
 ENV TERM=xterm \
-    PIP_TIMEOUT=180
+    PIP_TIMEOUT=180 \
+    SHUB_ENFORCE_PIP_CHECK=1
+
 
 RUN apt-get update -qq && \
     apt-get install -qy \
