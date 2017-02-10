@@ -39,7 +39,7 @@ schematics==1.0.4
 scrapinghub-entrypoint-scrapy==0.8.11
 scrapinghub==1.9.0
 scrapy-crawlera==1.1.0
-scrapy-dotpersistence==0.2.2
+scrapy-dotpersistence==0.2.3
 scrapy-pagestorage==0.1.0
 scrapy-splash==0.6.1
 scrapy==1.1.3
