@@ -28,3 +28,5 @@ slackclient
 python-slugify
 # required by Images addon
 boto
+# required by DeltaFetch addon
+bsddb3
