@@ -45,6 +45,7 @@ schematics==1.0.4
 scrapinghub-entrypoint-scrapy==0.8.11
 scrapinghub==1.9.0
 scrapy-crawlera==1.1.0
+scrapy-deltafetch==1.2.1
 scrapy-dotpersistence==0.3.0
 scrapy-pagestorage==0.1.0
 scrapy-splash==0.7
