@@ -4,10 +4,12 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+appdirs==1.4.0            # via setuptools
 attrs==16.0.0             # via service-identity
 awscli==1.10.52           # via scrapy-dotpersistence
 boto==2.42.0
 botocore==1.4.42          # via awscli, s3transfer
+bsddb3==6.2.4             # via scrapy-deltafetch
 cffi==1.7.0               # via cryptography
 colorama==0.3.7           # via awscli
 cryptography==1.4         # via pyopenssl
@@ -23,6 +25,7 @@ lxml==3.6.1               # via parsel, premailer, scrapy
 markupsafe==0.23          # via jinja2
 mock==1.0.1               # via schematics
 monkeylearn==0.3.5
+packaging==16.8           # via setuptools
 parsel==1.0.2             # via scrapy
 premailer==2.9.2
 pyasn1-modules==0.0.8     # via service-identity
@@ -30,6 +33,7 @@ pyasn1==0.1.9             # via cryptography, pyasn1-modules, rsa, service-ident
 pycparser==2.14           # via cffi
 pydispatcher==2.0.5       # via scrapy
 pyopenssl==16.0.0         # via scrapy, service-identity
+pyparsing==2.1.10         # via packaging
 python-dateutil==2.5.3    # via botocore
 python-slugify==1.2.1
 queuelib==1.4.2           # via scrapy
@@ -41,6 +45,7 @@ schematics==1.0.4
 scrapinghub-entrypoint-scrapy==0.8.11
 scrapinghub==1.9.0
 scrapy-crawlera==1.1.0
+scrapy-deltafetch==1.2.1
 scrapy-dotpersistence==0.3.0
 scrapy-pagestorage==0.1.0
 scrapy-splash==0.7
