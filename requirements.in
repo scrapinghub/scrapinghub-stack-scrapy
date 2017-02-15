@@ -12,6 +12,7 @@ scrapinghub-entrypoint-scrapy
 scrapylib
 scrapy-splash
 scrapy-crawlera
+scrapy-deltafetch
 scrapy-dotpersistence
 scrapy-pagestorage
 
@@ -28,3 +29,5 @@ slackclient
 python-slugify
 # required by Images addon
 boto
+# required by DeltaFetch addon
+bsddb3
