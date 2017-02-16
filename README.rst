@@ -4,6 +4,7 @@ scrapinghub-stack-scrapy
 
 Software stack with latest Scrapy and updated deps.
 
+[WARNING] ``scrapy:1.0`` stack is deprecated, please use more recent stack, e.g. ``scrapy:1.1``.
 
 Branches and tags
 =================
