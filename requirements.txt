@@ -4,6 +4,7 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+appdirs==1.4.3            # via setuptools
 attrs==15.2.0             # via service-identity
 boto==2.42.0
 cffi==1.6.0               # via cryptography
@@ -21,11 +22,15 @@ lxml==3.6.0               # via premailer, scrapy
 markupsafe==0.23          # via jinja2
 mock==1.0.1               # via schematics
 monkeylearn==0.3.5
+olefile==0.44             # via pillow
+packaging==16.8           # via setuptools
+pillow==4.0.0
 premailer==2.9.2
 pyasn1-modules==0.0.8     # via service-identity
 pyasn1==0.1.9             # via cryptography, pyasn1-modules, service-identity
 pycparser==2.14           # via cffi
 pyopenssl==16.0.0         # via scrapy, service-identity
+pyparsing==2.2.0          # via packaging
 python-dateutil==2.5.3    # via s3cmd
 python-magic==0.4.11      # via s3cmd
 python-slugify==1.2.1
