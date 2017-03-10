@@ -27,3 +27,5 @@ schematics==1.0.4
 scrapinghub==1.9.0
 slackclient
 python-slugify
+# required by Images addon
+pillow
