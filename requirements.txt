@@ -31,8 +31,10 @@ lxml==3.7.2               # via parsel, premailer, scrapy
 markupsafe==0.23          # via jinja2
 mock==1.0.1               # via schematics
 monkeylearn==0.3.6
+olefile==0.44             # via pillow
 packaging==16.8           # via setuptools
 parsel==1.1.0             # via scrapy
+pillow==4.0.0
 premailer==2.9.2
 pyasn1-modules==0.0.8     # via service-identity
 pyasn1==0.2.2             # via cryptography, pyasn1-modules, rsa, service-identity
