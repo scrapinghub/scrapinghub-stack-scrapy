@@ -4,7 +4,6 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-appdirs==1.4.0            # via setuptools
 attrs==15.2.0             # via service-identity
 boto==2.41.0
 bsddb3==6.2.4             # via scrapy-deltafetch
