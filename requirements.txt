@@ -4,7 +4,6 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-appdirs==1.4.3            # via setuptools
 attrs==15.2.0             # via service-identity
 boto==2.42.0
 cffi==1.6.0               # via cryptography
