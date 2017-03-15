@@ -36,7 +36,7 @@ requests==2.10.0          # via hubstorage, monkeylearn, slackclient
 retrying==1.3.3           # via hubstorage
 s3cmd==1.6.1              # via scrapy-dotpersistence
 schematics==1.0.4
-scrapinghub-entrypoint-scrapy==0.8.10
+https://github.com/scrapinghub/scrapinghub-entrypoint-scrapy/archive/249a1e2.zip#egg=scrapinghub-entrypoint-scrapy==0.9.0.dev14
 scrapy-crawlera==1.1.0
 scrapy-dotpersistence==0.2.2
 scrapy-pagestorage==0.1.0
