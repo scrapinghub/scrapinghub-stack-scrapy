@@ -1,0 +1,5 @@
+image: scrapinghub
+
+script:
+  - build_docker_image
+  - publish_scrapy_stack_to_dockerhub
