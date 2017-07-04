@@ -46,7 +46,7 @@ s3transfer==0.1.1         # via awscli
 schematics==1.0.4
 scrapinghub-entrypoint-scrapy==0.10.0
 scrapinghub==1.9.0
-scrapy-crawlera==1.1.0
+scrapy-crawlera==1.2.4
 scrapy-deltafetch==1.2.1
 scrapy-dotpersistence==0.3.0
 scrapy-pagestorage==0.1.0
