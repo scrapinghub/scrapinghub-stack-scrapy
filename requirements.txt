@@ -43,7 +43,7 @@ s3cmd==1.6.1              # via scrapy-dotpersistence
 schematics==1.0.4
 scrapinghub-entrypoint-scrapy==0.10.0
 scrapinghub==1.9.0
-scrapy-crawlera==1.1.0
+scrapy-crawlera==1.2.4
 scrapy-deltafetch==1.2.1
 scrapy-dotpersistence==0.2.2
 scrapy-pagestorage==0.1.0
