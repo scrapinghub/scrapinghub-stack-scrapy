@@ -20,7 +20,7 @@ The repository includes a set of branches to maintain different stack versions d
 Versioning
 ==========
 
-We use git tags to pin a stack version and release a stack image to Docker hub.
+We use Git tags to pin a stack version and release a stack image to Docker hub.
 
 Versioning is done in the following manner:
 
