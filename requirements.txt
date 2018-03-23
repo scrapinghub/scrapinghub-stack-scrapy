@@ -66,6 +66,6 @@ slackclient==1.1.0
 twisted==17.9.0           # via scrapy
 unidecode==1.0.22         # via python-slugify
 urllib3==1.22             # via requests
-w3lib==1.18.0             # via parsel, scrapy
+w3lib==1.18.0             # via parsel, scrapy, scrapy-crawlera
 websocket-client==0.46.0  # via slackclient
 zope.interface==4.4.3     # via twisted
