@@ -35,7 +35,7 @@ markupsafe==1.0           # via jinja2
 mock==1.0.1               # via schematics
 monkeylearn==0.3.7
 parsel==1.3.1             # via scrapy
-pillow==5.0.0
+pillow==5.2.0
 premailer==2.9.2
 pyasn1-modules==0.2.1     # via service-identity
 pyasn1==0.4.2             # via pyasn1-modules, rsa, service-identity
