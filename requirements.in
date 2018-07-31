@@ -29,4 +29,4 @@ slackclient
 python-slugify
 # required by Images addon
 boto
-pillow
+pillow>=5.1
