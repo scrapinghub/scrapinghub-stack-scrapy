@@ -51,7 +51,7 @@ scrapinghub==1.9.0
 scrapy-crawlera==1.2.2
 scrapy-deltafetch==1.2.1
 scrapy-dotpersistence==0.3.0
-scrapy-pagestorage==0.2.1
+scrapy-pagestorage==0.2.2
 scrapy-splash==0.7.1
 scrapy==1.4.0
 scrapylib==1.7.1
