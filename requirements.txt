@@ -17,7 +17,8 @@ cryptography==1.7.2       # via pyopenssl
 cssselect==1.0.1          # via parsel, premailer, scrapy
 cssutils==1.0.1           # via premailer
 docutils==0.13.1          # via awscli, botocore
-idna==2.2                 # via cryptography
+hyperlink==18.0.0         # via twisted
+idna==2.7                 # via cryptography, hyperlink
 incremental==16.10.1      # via twisted
 jinja2==2.9.5
 jmespath==0.9.1           # via botocore
