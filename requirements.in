@@ -3,7 +3,7 @@
 #   pip-compile --output-file requirements.txt requirements.in
 #
 
-Scrapy==1.5.2
+Scrapy==1.6.0
 
 # scrapinghub glue
 scrapinghub-entrypoint-scrapy
@@ -24,7 +24,7 @@ Jinja2
 jsonschema
 premailer==2.9.2
 schematics==1.0.4
-scrapinghub==2.0.3
+scrapinghub==2.1.0
 slackclient
 python-slugify
 # required by Images addon
