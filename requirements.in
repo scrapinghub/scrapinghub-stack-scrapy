@@ -24,7 +24,7 @@ Jinja2
 jsonschema
 premailer==2.9.2
 schematics==1.0.4
-scrapinghub==2.0.3
+scrapinghub==2.1.1
 slackclient
 python-slugify
 # required by Images addon
