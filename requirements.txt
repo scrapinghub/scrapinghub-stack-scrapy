@@ -49,7 +49,7 @@ rsa==3.4.2                # via awscli
 s3transfer==0.2.0         # via awscli
 schematics==1.0.4
 scrapinghub-entrypoint-scrapy==0.11.2
-scrapinghub==2.1.0
+scrapinghub==2.1.1
 scrapy-crawlera==1.5.0
 scrapy-deltafetch==1.2.1
 scrapy-dotpersistence==0.3.0
