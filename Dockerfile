@@ -1,4 +1,4 @@
-FROM python:2-jessie
+FROM python:2-slim
 ARG PIP_INDEX_URL
 ARG PIP_TRUSTED_HOST
 ARG APT_PROXY
@@ -17,10 +17,11 @@ RUN apt-get update -qq && \
     apt-get install -qy \
         netbase ca-certificates apt-transport-https \
         build-essential locales \
+        libdb-dev \
         libxml2-dev \
         libssl-dev \
         libxslt1-dev \
-        libmysqlclient-dev \
+        default-libmysqlclient-dev \
         libpq-dev \
         libevent-dev \
         libffi-dev \
