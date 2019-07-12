@@ -14,7 +14,10 @@ scrapy-splash
 scrapy-crawlera
 scrapy-deltafetch
 scrapy-dotpersistence
-scrapy-pagestorage
+scrapy-magicfields
+scrapy-pagestorag
+scrapy-querycleaner
+scrapy-splitvariants
 
 # required by Monkeylearn addon
 monkeylearn

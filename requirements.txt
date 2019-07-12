@@ -53,8 +53,11 @@ scrapinghub==2.1.1
 scrapy-crawlera==1.5.0
 scrapy-deltafetch==1.2.1
 scrapy-dotpersistence==0.3.0
+scrapy-magicfields==1.1.0
 scrapy-pagestorage==0.2.2
+scrapy-querycleaner==1.0.0
 scrapy-splash==0.7.2
+scrapy-splitvariants==1.1.0
 scrapy==1.6.0
 scrapylib==1.7.1
 service-identity==18.1.0  # via scrapy
