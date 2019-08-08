@@ -8,6 +8,9 @@ Scrapy==1.7.3
 # scrapinghub glue
 scrapinghub-entrypoint-scrapy
 
+# official python client
+scrapinghub==2.2.1
+
 # scrapy plugins
 scrapylib
 scrapy-splash
@@ -16,17 +19,10 @@ scrapy-deltafetch
 scrapy-dotpersistence
 scrapy-pagestorage
 
+# required by Monitoring addon
+spidermon[monitoring,validation]
 # required by Monkeylearn addon
 monkeylearn
-# required by Monitoring addon egg
-six
-Jinja2
-jsonschema
-premailer==2.9.2
-schematics==1.0.4
-scrapinghub==2.2.1
-slackclient
-python-slugify
 # required by Images addon
 boto
 pillow>=5.1
