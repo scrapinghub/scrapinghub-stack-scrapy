@@ -26,7 +26,7 @@ msgpack
 premailer==2.9.2
 schematics==1.0.4
 scrapinghub==2.2.1
-slackclient
+slackclient<2.0.0
 python-slugify
 # required by Images addon
 boto
