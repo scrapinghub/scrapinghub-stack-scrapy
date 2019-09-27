@@ -17,7 +17,10 @@ scrapy-splash
 scrapy-crawlera
 scrapy-deltafetch
 scrapy-dotpersistence
+scrapy-magicfields
 scrapy-pagestorage
+scrapy-querycleaner
+scrapy-splitvariants
 
 # required by Monitoring addon
 spidermon[monitoring,validation]
