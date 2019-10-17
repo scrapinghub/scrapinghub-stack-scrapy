@@ -1,10 +1,12 @@
 FROM python:2-jessie
-ARG PIP_INDEX_URL
-ARG PIP_TRUSTED_HOST
-ARG APT_PROXY
+# the args must be onbuild to allow overwriting it in derived images
+# https://github.com/moby/moby/issues/26533#issuecomment-246966836
+ONBUILD ARG PIP_INDEX_URL
+ONBUILD ARG PIP_TRUSTED_HOST
+ONBUILD ARG APT_PROXY
 ONBUILD ENV PIP_TRUSTED_HOST=$PIP_TRUSTED_HOST PIP_INDEX_URL=$PIP_INDEX_URL
-ONBUILD RUN test -n $APT_PROXY && echo 'Acquire::http::Proxy \"$APT_PROXY\";' \
-    >/etc/apt/apt.conf.d/proxy
+ONBUILD RUN if [ -n "$APT_PROXY" ]; then \
+    echo "Acquire::http::Proxy \"$APT_PROXY\";" >/etc/apt/apt.conf.d/proxy; fi
 
 # TERM needs to be set here for exec environments
 # PIP_TIMEOUT so installation doesn't hang forever
@@ -28,9 +30,8 @@ RUN apt-get update -qq && \
         libz-dev \
         unixodbc unixodbc-dev \
         telnet vim htop iputils-ping curl wget lsof git sudo \
-        ghostscript
-# http://unix.stackexchange.com/questions/195975/cannot-force-remove-directory-in-docker-build
-#        && rm -rf /var/lib/apt/lists
+        ghostscript && \
+    rm -rf /var/lib/apt/lists
 
 # adding custom locales to provide backward support with scrapy cloud 1.0
 COPY locales /etc/locale.gen
