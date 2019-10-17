@@ -5,8 +5,8 @@ ONBUILD ARG PIP_INDEX_URL
 ONBUILD ARG PIP_TRUSTED_HOST
 ONBUILD ARG APT_PROXY
 ONBUILD ENV PIP_TRUSTED_HOST=$PIP_TRUSTED_HOST PIP_INDEX_URL=$PIP_INDEX_URL
-ONBUILD RUN test -n "$APT_PROXY" && echo "Acquire::http::Proxy \"$APT_PROXY\";" \
-    >/etc/apt/apt.conf.d/proxy
+ONBUILD RUN if [ -n "$APT_PROXY" ]; then \
+    echo "Acquire::http::Proxy \"$APT_PROXY\";" >/etc/apt/apt.conf.d/proxy; fi
 
 # TERM needs to be set here for exec environments
 # PIP_TIMEOUT so installation doesn't hang forever
