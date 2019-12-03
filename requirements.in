@@ -29,6 +29,8 @@ monkeylearn
 # required by Images addon
 boto
 pillow>=5.1
+# pre-install boto3 compatible with botocore
+boto3
 
 # address known vulnerabilities
 awscli>=1.16.179    # fix pyaml dependency
