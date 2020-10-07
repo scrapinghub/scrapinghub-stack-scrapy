@@ -24,24 +24,27 @@ We use Git tags to pin a stack version and release a stack image to Docker hub.
 
 Versioning is done in the following manner:
 
-- major stack versions are marked with ``<scrapy version>[-py3]`` tag.
+- major stack versions are marked with ``<scrapy version>[-pyX]`` tag.
 
-  Note: Lack of ``-py3`` suffix means that a stack is built using Python 2.
+  **Note**: All tags prior to ``2.0`` used Python 2 as its default version.
+  Support for Python 2 was dropped on version ``2.0``, so from that version onwards all tags base on Python 3
+  The presence of a ``-py3`` suffix on an older tag means that specific stack uses updated Python 3 interpreter.
 
   Examples:
 
     - tag ``1.0``
-    - tag ``1.1``
     - tag ``1.1-py3``
+    - tag ``1.6-py37``
 
-- each published version of the stack is marked with ``<scrapy version>[-py3]-<release date>`` tag
+- each published version of the stack is marked with ``<scrapy version>[-pyX]-<release date>`` tag
 
   It's **highly recommended** to use these versions (or major ones above) over others.
 
   Examples:
 
-    - ``1.1-20160429`` refers to Python 2 based stack released at 2016-04-29 with ``Scrapy 1.1``
-    - ``1.1-py3-20160804`` refers to Python 3 based stack released at 2016-08-04 with ``Scrapy 1.1``
+    - ``1.1-20160429`` refers to the stack released at 2016-04-29 with ``Scrapy 1.1``, using it's default Python interpreter (2.7 in this case).
+    - ``1.1-py3-20160804`` refers the stack released at 2016-08-04 with ``Scrapy 1.1``, using Python 3.
+    - ``2.3-20200806`` refers to the stack release on 2020-08-06 with ``Scrapy 2.3``, using it's default Python interpreter (3.8 in this case). 
 
 - latest version of the stack is matched with a branch name without ``branch-`` prefix with ``-latest`` suffix
 
