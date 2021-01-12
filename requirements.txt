@@ -23,7 +23,7 @@ cryptography==3.3.1       # via pyopenssl, scrapy, service-identity
 cssselect==1.1.0          # via parsel, premailer, scrapy
 cssutils==1.0.2           # via premailer
 docutils==0.15.2          # via awscli
-hyperlink==21.0.0         # via twisted
+hyperlink==20.0.1         # via twisted
 idna==2.10                # via hyperlink, jsonschema, requests, yarl
 incremental==17.5.0       # via twisted
 itemadapter==0.2.0        # via itemloaders, scrapy
@@ -35,7 +35,7 @@ jsonschema[format]==3.2.0  # via spidermon
 lxml==4.6.2               # via parsel, premailer, scrapy
 markupsafe==1.1.1         # via jinja2
 monkeylearn==3.5.2        # via -r requirements.in
-multidict==5.1.0          # via aiohttp, yarl
+multidict==4.7.6          # via aiohttp, yarl
 parsel==1.6.0             # via itemloaders, scrapy
 pillow==8.1.0             # via -r requirements.in
 premailer==3.7.0          # via spidermon
@@ -45,7 +45,7 @@ pyasn1==0.4.8             # via pyasn1-modules, rsa, service-identity
 pycparser==2.20           # via cffi
 pydispatcher==2.0.5       # via scrapy
 pyhamcrest==2.0.2         # via twisted
-pyopenssl==20.0.1         # via scrapy
+pyopenssl==19.1.0         # via scrapy
 pyrsistent==0.17.3        # via jsonschema
 python-dateutil==2.8.1    # via botocore
 python-slugify==4.0.1     # via spidermon
