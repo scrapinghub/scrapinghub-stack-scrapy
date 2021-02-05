@@ -54,7 +54,7 @@ rfc3987==1.3.8            # via jsonschema
 rsa==4.5                  # via awscli
 s3transfer==0.3.3         # via awscli, boto3
 schematics==2.1.0         # via spidermon
-scrapinghub-entrypoint-scrapy==0.12.0  # via -r requirements.in, scrapy-pagestorage
+scrapinghub-entrypoint-scrapy==0.12.1  # via -r requirements.in, scrapy-pagestorage
 scrapinghub==2.3.1        # via -r requirements.in, scrapinghub-entrypoint-scrapy, scrapy-pagestorage
 scrapy-crawlera==1.7.0    # via -r requirements.in
 scrapy-deltafetch==1.2.1  # via -r requirements.in
