@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+  dev:
+    build:
+      context: .
+      target: dev
+    command: bash
+    volumes:
+    - root:/root
+    - .:/var/task
+    stdin_open: true
+    tty: true
+volumes:
+  root:
