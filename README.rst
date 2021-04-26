@@ -66,6 +66,33 @@ All stack versions are listed correspond to a Docker image listed at:
 - https://hub.docker.com/r/scrapinghub/scrapinghub-stack-scrapy/tags/
 
 
+Setting up local Environment to update requirements
+==================================================
+
+1. Setup and start Docker demon
+2. Build container using Dockerfile::
+
+    docker-compose up --build -d
+    
+3. Attach to container::
+
+    docker attach scrapinghub-stack-scrapy_dev_1
+
+4. Go to app directory::
+
+    cd app
+
+5. Install pip tools::
+
+    pip install pip-tools
+
+6. run pip-compile to update requirements.txt file based on pacakge versions in requirements.in file::
+
+    pip-compile --output-file requirements.txt requirements.in
+
+7. Create PR with appropriate branch name and commit changes along with tags as per release procedure
+
+
 Release procedure
 =================
 
