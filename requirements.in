@@ -13,7 +13,8 @@ scrapinghub==2.3.1
 
 # scrapy plugins
 scrapy-splash
-scrapy-crawlera
+scrapy-crawlera # legacy: the same as scrapy-zyte-smartproxy
+scrapy-zyte-smartproxy
 scrapy-deltafetch
 scrapy-dotpersistence
 scrapy-magicfields
