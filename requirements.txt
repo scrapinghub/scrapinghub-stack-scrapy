@@ -60,6 +60,7 @@ schematics==2.1.0         # via spidermon
 scrapinghub-entrypoint-scrapy==0.12.1  # via -r requirements.in, scrapy-pagestorage
 scrapinghub==2.3.1        # via -r requirements.in, scrapinghub-entrypoint-scrapy, scrapy-pagestorage
 scrapy-crawlera==1.7.2    # via -r requirements.in
+scrapy-zyte-smartproxy==2.0.0  # via -r requirements.in
 scrapy-deltafetch==1.2.1  # via -r requirements.in
 scrapy-dotpersistence==0.3.0  # via -r requirements.in
 scrapy-magicfields==1.1.0  # via -r requirements.in
