@@ -40,5 +40,5 @@ lxml>=4.6.3         # CVE-2021-28957
 pillow>=8.1.2       # GHSA-jgpv-4h4c-xhw3
 pyyaml>=5.4         # CVE-2020-14343
 requests>=2.20.0    # CVE-2018-18074
-Twisted>=19.2.1     # CVE-2019-12387
+Twisted[http2]>=19.2.1  # CVE-2019-12387
 urllib3>=1.26.4     # CVE-2021-28363
