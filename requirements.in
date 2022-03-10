@@ -6,7 +6,7 @@
 Scrapy==2.6.1
 
 # scrapinghub glue
-scrapinghub-entrypoint-scrapy
+scrapinghub-entrypoint-scrapy>=0.13.0
 
 # official python client
 scrapinghub==2.3.1
