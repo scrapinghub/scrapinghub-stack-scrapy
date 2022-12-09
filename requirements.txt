@@ -40,7 +40,7 @@ botocore==1.27.93
     #   s3transfer
 cachetools==5.2.0
     # via premailer
-certifi==2022.9.24
+certifi==2022.12.7
     # via
     #   requests
     #   sentry-sdk
