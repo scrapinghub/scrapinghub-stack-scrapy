@@ -1,4 +1,4 @@
-image: scrapinghub
+image: scrapinghub:v3
 
 script:
   - build_docker_image
