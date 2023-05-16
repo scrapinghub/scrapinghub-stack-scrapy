@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    working_directory: /app
+    docker:
+      - image: docker:17.05.0-ce-git
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Docker image
+          command: |
+            image=scrapinghub/scrapinghub-stack-scrapy
+
+            docker build -t $image .
+
+      - deploy:
+          name: Push Docker image
+          command: |
+            set -x
+            docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASSWORD"
+
+            tags=$(git tag -l --points-at $CIRCLE_SHA1)
+
+            [[ "${CIRCLE_BRANCH}" == "master" ]] && tags+=" latest"
+
+            if [ -n "$tags" ]; then 
+              set -e
+
+              for tag in $tags; do
+                repo=$image:$tag
+                docker tag $image $repo
+                docker push $repo
+              done
+            fi
