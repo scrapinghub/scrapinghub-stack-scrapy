@@ -4,24 +4,26 @@ jobs:
     working_directory: /app
     docker:
       - image: docker:17.05.0-ce-git
+    environment:
+      image: scrapinghub/scrapinghub-stack-scrapy
     steps:
       - checkout
       - setup_remote_docker
+
       - run:
           name: Build Docker image
           command: |
-            image=scrapinghub/scrapinghub-stack-scrapy
-
             docker build -t $image .
 
       - deploy:
-          name: Push Docker image
+          name: Push Docker image to DockerHub
           command: |
             set -x
             docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASSWORD"
 
             tags=$(git tag -l --points-at $CIRCLE_SHA1)
 
+            [[ "${CIRCLE_BRANCH}" == branch-* ]] && tags+=" ${CIRCLE_BRANCH:7}-latest"
             [[ "${CIRCLE_BRANCH}" == "master" ]] && tags+=" latest"
 
             if [ -n "$tags" ]; then 
@@ -33,3 +35,24 @@ jobs:
                 docker push $repo
               done
             fi
+
+      - deploy:
+          name: Extract debug info and store in S3
+          command: |
+            set -e
+            set -x
+
+            tmpfile=$(mktemp)
+
+            cleanup() {
+              rm -rf "$tmpfile"
+            }
+            trap cleanup EXIT
+            apk update && apk add --no-cache jq
+
+            docker run --rm $image shub-image-info --debug | tee shub-debug.json
+            cat shub-debug.json | jq -r ".debug" | tee $tmpfile
+
+            for tag in $tags; do
+              s3cmd put "$tmpfile" "${S3_BASE}/$tag"
+            done
