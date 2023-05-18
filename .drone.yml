@@ -1,5 +1,0 @@
-image: scrapinghub:v3
-
-script:
-  - build_docker_image
-  - publish_scrapy_stack_to_dockerhub
