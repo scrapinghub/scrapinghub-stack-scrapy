@@ -39,19 +39,13 @@ jobs:
             # Extract debug info and store in S3
             set -e
 
-            tmpfile=$(mktemp)
-
-            cleanup() {
-              rm -rf "$tmpfile"
-            }
-            trap cleanup EXIT
             apk update && apk add --no-cache jq
 
-            docker run --rm $image shub-image-info --debug | tee shub-debug.json
-            cat shub-debug.json | jq -r ".debug" | tee $tmpfile
+            docker run --rm $image shub-image-info --debug | jq -r ".debug" | tee debug.txt
 
             for tag in $tags; do
-              docker run -it -v ${tmpfile}:/debug_file.txt d3fk/s3cmd:arch-stable \
-                --access_key=$AWS_ACCESS_KEY_ID --secret_key=$AWS_SECRET_ACCESS_KEY \
-                put /debug_file.txt s3://${S3_BASE}/$tag
+              docker run -v ${PWD}:/s3 d3fk/s3cmd:arch-stable \
+                --access_key=$AWS_ACCESS_KEY_ID \
+                --secret_key=$AWS_SECRET_ACCESS_KEY \
+                put /s3/debug.txt s3://${S3_BASE}/$tag
             done
