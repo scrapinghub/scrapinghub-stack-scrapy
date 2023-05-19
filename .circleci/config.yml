@@ -21,10 +21,10 @@ jobs:
             set -x
             docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASSWORD"
 
-            tags=$(git tag -l --points-at $CIRCLE_SHA1)
+            tags="$(git tag -l --points-at ${CIRCLE_SHA1})"
 
-            [[ "${CIRCLE_BRANCH}" == branch-* ]] && tags+=" ${CIRCLE_BRANCH:7}-latest"
-            [[ "${CIRCLE_BRANCH}" == "master" ]] && tags+=" latest"
+            [[ "${CIRCLE_BRANCH:0:7}" == "branch-" ]] && tags="$tags ${CIRCLE_BRANCH:7}-latest"
+            [[ "${CIRCLE_BRANCH}" == "master" ]] && tags="$tags latest"
 
             if [ -n "$tags" ]; then 
               set -e
@@ -36,11 +36,8 @@ jobs:
               done
             fi
 
-      - deploy:
-          name: Extract debug info and store in S3
-          command: |
+            # Extract debug info and store in S3
             set -e
-            set -x
 
             tmpfile=$(mktemp)
 
