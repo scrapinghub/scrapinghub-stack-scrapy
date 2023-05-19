@@ -51,5 +51,7 @@ jobs:
             cat shub-debug.json | jq -r ".debug" | tee $tmpfile
 
             for tag in $tags; do
-              s3cmd put "$tmpfile" "${S3_BASE}/$tag"
+              docker run -it -v ${tmpfile}:/debug_file.txt d3fk/s3cmd:arch-stable \
+                --access_key=$AWS_ACCESS_KEY_ID --secret_key=$AWS_SECRET_ACCESS_KEY \
+                put /debug_file.txt s3://${S3_BASE}/$tag
             done
