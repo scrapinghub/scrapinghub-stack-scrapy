@@ -37,7 +37,6 @@ jobs:
             fi
 
             # Extract debug info and store in S3
-            tags="$tags testing"
             set -e
 
             apk update && apk add --no-cache jq
