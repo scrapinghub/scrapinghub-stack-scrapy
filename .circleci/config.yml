@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /app
     docker:
-      - image: docker:17.05.0-ce-git
+      - image: docker:20.10.23-git
     environment:
       image: scrapinghub/scrapinghub-stack-scrapy
     steps:
@@ -37,6 +37,7 @@ jobs:
             fi
 
             # Extract debug info and store in S3
+            tags="$tags testing"
             set -e
 
             apk update && apk add --no-cache jq
@@ -44,8 +45,8 @@ jobs:
             docker run --rm $image shub-image-info --debug | jq -r ".debug" | tee debug.txt
 
             for tag in $tags; do
-              docker run -v ${PWD}:/s3 d3fk/s3cmd:arch-stable \
+              cat debug.txt | docker run -i d3fk/s3cmd:arch-stable \
                 --access_key=$AWS_ACCESS_KEY_ID \
                 --secret_key=$AWS_SECRET_ACCESS_KEY \
-                put /s3/debug.txt s3://${S3_BASE}/$tag
+                put - ${S3_BASE}/$tag
             done
