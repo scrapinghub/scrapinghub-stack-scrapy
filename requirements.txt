@@ -54,7 +54,7 @@ colorama==0.4.4
     # via awscli
 constantly==15.1.0
     # via twisted
-cryptography==39.0.0
+cryptography==39.0.1
     # via
     #   -r requirements.in
     #   pyopenssl
