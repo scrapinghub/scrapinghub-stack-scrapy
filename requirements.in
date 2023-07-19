@@ -23,7 +23,7 @@ scrapy-querycleaner
 scrapy-splitvariants
 
 # required by Monitoring addon
-spidermon[monitoring,validation]
+spidermon[monitoring]
 # required by Monkeylearn addon
 monkeylearn
 # required by Images addon
