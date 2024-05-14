@@ -4,15 +4,13 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-aiohttp==3.8.6
+aiohttp==3.9.5
     # via -r requirements.in
 aiosignal==1.3.1
     # via aiohttp
 arrow==1.3.0
     # via isoduration
-async-timeout==4.0.3
-    # via aiohttp
-attrs==23.1.0
+attrs==23.2.0
     # via
     #   aiohttp
     #   automat
@@ -22,7 +20,7 @@ attrs==23.1.0
     #   twisted
 automat==22.10.0
     # via twisted
-awscli==1.29.62
+awscli==1.32.104
     # via
     #   -r requirements.in
     #   scrapy-dotpersistence
@@ -30,32 +28,30 @@ boto==2.49.0
     # via
     #   -r requirements.in
     #   spidermon
-boto3==1.28.62
+boto3==1.34.104
     # via
     #   -r requirements.in
     #   spidermon
-botocore==1.31.62
+botocore==1.34.104
     # via
     #   awscli
     #   boto3
     #   s3transfer
-cachetools==5.3.1
+cachetools==5.3.3
     # via premailer
-certifi==2023.7.22
+certifi==2024.2.2
     # via
     #   requests
     #   sentry-sdk
 cffi==1.16.0
     # via cryptography
-charset-normalizer==3.3.0
-    # via
-    #   aiohttp
-    #   requests
-colorama==0.4.4
+charset-normalizer==3.3.2
+    # via requests
+colorama==0.4.6
     # via awscli
-constantly==15.1.0
+constantly==23.10.4
     # via twisted
-cryptography==41.0.4
+cryptography==42.0.7
     # via
     #   pyopenssl
     #   scrapy
@@ -65,15 +61,17 @@ cssselect==1.2.0
     #   parsel
     #   premailer
     #   scrapy
-cssutils==2.7.1
+cssutils==2.10.3
     # via premailer
+defusedxml==0.7.1
+    # via scrapy
 docutils==0.16
     # via awscli
-filelock==3.12.4
+filelock==3.14.0
     # via tldextract
 fqdn==1.5.1
     # via jsonschema
-frozenlist==1.4.0
+frozenlist==1.4.1
     # via
     #   aiohttp
     #   aiosignal
@@ -85,7 +83,7 @@ hyperframe==6.0.1
     # via h2
 hyperlink==21.0.0
     # via twisted
-idna==3.4
+idna==3.7
     # via
     #   hyperlink
     #   jsonschema
@@ -96,14 +94,14 @@ incremental==22.10.0
     # via twisted
 isoduration==20.11.0
     # via jsonschema
-itemadapter==0.8.0
+itemadapter==0.9.0
     # via
     #   itemloaders
     #   scrapy
     #   spidermon
-itemloaders==1.1.0
+itemloaders==1.2.0
     # via scrapy
-jinja2==3.1.2
+jinja2==3.1.4
     # via
     #   -r requirements.in
     #   spidermon
@@ -115,66 +113,66 @@ jmespath==1.0.1
     #   parsel
 jsonpointer==2.4
     # via jsonschema
-jsonschema[format]==4.19.1
+jsonschema[format]==4.22.0
     # via spidermon
-jsonschema-specifications==2023.7.1
+jsonschema-specifications==2023.12.1
     # via jsonschema
-lxml==4.9.3
+lxml==5.2.2
     # via
     #   -r requirements.in
     #   parsel
     #   premailer
     #   scrapy
-markupsafe==2.1.3
+markupsafe==2.1.5
     # via jinja2
 monkeylearn==3.6.0
     # via -r requirements.in
-multidict==6.0.4
+multidict==6.0.5
     # via
     #   aiohttp
     #   yarl
-packaging==23.2
+packaging==24.0
     # via
     #   parsel
     #   scrapy
-parsel==1.8.1
+parsel==1.9.1
     # via
     #   itemloaders
     #   scrapy
-pillow==10.0.1
+pillow==10.3.0
     # via -r requirements.in
 premailer==3.10.0
     # via spidermon
 priority==1.3.0
     # via twisted
-protego==0.3.0
+protego==0.3.1
     # via scrapy
-pyasn1==0.5.0
+pyasn1==0.6.0
     # via
     #   pyasn1-modules
     #   rsa
     #   service-identity
-pyasn1-modules==0.3.0
+pyasn1-modules==0.4.0
     # via service-identity
-pycparser==2.21
+pycparser==2.22
     # via cffi
 pydispatcher==2.0.7
     # via scrapy
-pyopenssl==23.2.0
+pyopenssl==24.1.0
     # via scrapy
-python-dateutil==2.8.2
+python-dateutil==2.9.0.post0
     # via
     #   arrow
     #   botocore
-python-slugify==8.0.1
+python-slugify==8.0.4
     # via spidermon
 pyyaml==6.0.1
     # via
     #   -r requirements.in
     #   awscli
-queuelib==1.6.2
+queuelib==1.7.0
     # via scrapy
-referencing==0.30.2
+referencing==0.35.1
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -187,7 +185,7 @@ requests==2.31.0
     #   scrapinghub
     #   spidermon
     #   tldextract
-requests-file==1.5.1
+requests-file==2.0.0
     # via tldextract
 retrying==1.3.4
     # via scrapinghub
@@ -195,13 +193,13 @@ rfc3339-validator==0.1.4
     # via jsonschema
 rfc3987==1.3.8
     # via jsonschema
-rpds-py==0.10.4
+rpds-py==0.18.1
     # via
     #   jsonschema
     #   referencing
 rsa==4.7.2
     # via awscli
-s3transfer==0.7.0
+s3transfer==0.10.1
     # via
     #   awscli
     #   boto3
@@ -211,12 +209,12 @@ scrapinghub==2.4.0
     #   scrapinghub-entrypoint-scrapy
     #   scrapy-pagestorage
     #   spidermon
-scrapinghub-entrypoint-scrapy==0.17.1
+scrapinghub-entrypoint-scrapy==0.17.2
     # via
     #   -r requirements.in
     #   scrapy-pagestorage
     #   spidermon
-scrapy==2.11.0
+scrapy==2.11.2
     # via
     #   -r requirements.in
     #   scrapinghub-entrypoint-scrapy
@@ -245,43 +243,42 @@ scrapy-splash==0.9.0
     # via -r requirements.in
 scrapy-splitvariants==1.1.0
     # via -r requirements.in
-scrapy-zyte-smartproxy==2.2.0
+scrapy-zyte-smartproxy==2.3.4
     # via -r requirements.in
-sentry-sdk==1.31.0
+sentry-sdk==2.1.1
     # via spidermon
-service-identity==23.1.0
+service-identity==24.1.0
     # via scrapy
 six==1.16.0
     # via
     #   automat
     #   monkeylearn
     #   python-dateutil
-    #   requests-file
     #   retrying
     #   rfc3339-validator
     #   scrapinghub
     #   scrapy-crawlera
     #   scrapy-querycleaner
     #   scrapy-zyte-smartproxy
-slack-sdk==3.23.0
+slack-sdk==3.27.1
     # via spidermon
-spidermon[monitoring]==1.20.0
+spidermon[monitoring]==1.22.0
     # via -r requirements.in
 text-unidecode==1.3
     # via python-slugify
-tldextract==3.6.0
+tldextract==5.1.2
     # via scrapy
-twisted[http2]==22.10.0
+twisted[http2]==24.3.0
     # via
     #   -r requirements.in
     #   scrapy
-types-python-dateutil==2.8.19.14
+types-python-dateutil==2.9.0.20240316
     # via arrow
-typing-extensions==4.8.0
+typing-extensions==4.11.0
     # via twisted
 uri-template==1.3.0
     # via jsonschema
-urllib3==2.0.6
+urllib3==2.2.1
     # via
     #   -r requirements.in
     #   botocore
@@ -296,9 +293,9 @@ w3lib==2.1.2
     #   scrapy-zyte-smartproxy
 webcolors==1.13
     # via jsonschema
-yarl==1.9.2
+yarl==1.9.4
     # via aiohttp
-zope-interface==6.1
+zope-interface==6.3
     # via
     #   scrapy
     #   twisted
