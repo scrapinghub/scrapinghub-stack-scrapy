@@ -1,4 +1,4 @@
-FROM python:3.12.7-slim-bookworm
+FROM python:3.11.10-slim-bookworm
 # the args must be onbuild to allow overwriting it in derived images
 # https://github.com/moby/moby/issues/26533#issuecomment-246966836
 ONBUILD ARG PIP_INDEX_URL
