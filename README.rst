@@ -2,8 +2,7 @@
 scrapinghub-stack-scrapy
 ========================
 
-Software stack with latest Scrapy and updated deps.
-
+Software stack with latest Scrapy and updated deps
 
 Branches and tags
 =================
