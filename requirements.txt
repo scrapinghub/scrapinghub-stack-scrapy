@@ -142,7 +142,7 @@ parsel==1.10.0
     # via
     #   itemloaders
     #   scrapy
-pillow==11.2.1
+pillow==11.3.0
     # via -r requirements.in
 premailer==3.10.0
     # via spidermon
@@ -183,7 +183,7 @@ referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.3
+requests==2.32.4
     # via
     #   -r requirements.in
     #   monkeylearn
@@ -290,7 +290,7 @@ typing-extensions==4.13.2
     #   twisted
 uri-template==1.3.0
     # via jsonschema
-urllib3==2.4.0
+urllib3==2.5.0
     # via
     #   -r requirements.in
     #   botocore
