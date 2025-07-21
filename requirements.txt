@@ -214,12 +214,10 @@ scrapinghub==2.5.0
     # via
     #   -r requirements.in
     #   scrapinghub-entrypoint-scrapy
-    #   scrapy-pagestorage
     #   spidermon
 scrapinghub-entrypoint-scrapy==0.17.7
     # via
     #   -r requirements.in
-    #   scrapy-pagestorage
     #   spidermon
 scrapy==2.13.3
     # via
@@ -229,7 +227,6 @@ scrapy==2.13.3
     #   scrapy-deltafetch
     #   scrapy-dotpersistence
     #   scrapy-magicfields
-    #   scrapy-pagestorage
     #   scrapy-querycleaner
     #   scrapy-splash
     #   scrapy-splitvariants
@@ -242,8 +239,6 @@ scrapy-deltafetch==2.1.0
 scrapy-dotpersistence==0.3.0
     # via -r requirements.in
 scrapy-magicfields==1.1.0
-    # via -r requirements.in
-scrapy-pagestorage==0.4.0
     # via -r requirements.in
 scrapy-querycleaner==1.0.0
     # via -r requirements.in

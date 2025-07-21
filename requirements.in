@@ -18,7 +18,6 @@ scrapy-zyte-smartproxy>=2.2.0
 scrapy-deltafetch
 scrapy-dotpersistence
 scrapy-magicfields
-scrapy-pagestorage>=0.4.0
 scrapy-querycleaner
 scrapy-splitvariants
 
