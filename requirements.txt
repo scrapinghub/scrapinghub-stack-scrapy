@@ -219,7 +219,7 @@ scrapinghub-entrypoint-scrapy==0.18.1
     # via
     #   -r requirements.in
     #   spidermon
-scrapy==2.14.1
+scrapy==2.14.2
     # via
     #   -r requirements.in
     #   scrapinghub-entrypoint-scrapy
