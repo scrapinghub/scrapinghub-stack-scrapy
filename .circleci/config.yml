@@ -23,7 +23,7 @@ jobs:
 
             tags="$(git tag -l --points-at ${CIRCLE_SHA1})"
 
-            [[ "${CIRCLE_BRANCH:0:7}" == "branch-" ]] && tags="$tags ${CIRCLE_BRANCH:7}-latest"
+            [[ "${CIRCLE_BRANCH:0:7}" == "branch-" ]] && tags="$tags ${CIRCLE_BRANCH:7}-latest ${CIRCLE_BRANCH:7}"
             [[ "${CIRCLE_BRANCH}" == "master" ]] && tags="$tags latest"
 
             if [ -n "$tags" ]; then
