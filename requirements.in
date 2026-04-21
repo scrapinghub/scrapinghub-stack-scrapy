@@ -34,9 +34,9 @@ boto3
 aiohttp>=3.7.4      # CVE-2021-21330
 awscli>=1.19.0      # fix pyyaml dependency
 Jinja2>=2.11.3      # CVE-2020-28493
-lxml>=4.6.3         # CVE-2021-28957
-pillow>=8.1.2       # GHSA-jgpv-4h4c-xhw3
+lxml>=6.1.0         # CVE-2021-28957
+pillow>=12.2.0       # GHSA-jgpv-4h4c-xhw3
 pyyaml>=5.4         # CVE-2020-14343
-requests>=2.20.0    # CVE-2018-18074
+requests>=2.33.0    # CVE-2018-18074
 Twisted[http2]>=23.8.0  # CVE-2019-12387
-urllib3>=1.26.4     # CVE-2021-28363
+urllib3>=2.6.3     # CVE-2021-28363
