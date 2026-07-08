@@ -23,8 +23,6 @@ scrapy-splitvariants
 
 # required by Monitoring addon
 spidermon[monitoring]
-# required by Monkeylearn addon
-monkeylearn
 # required by Images addon
 boto
 # pre-install boto3 compatible with botocore

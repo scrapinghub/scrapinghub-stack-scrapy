@@ -47,5 +47,3 @@ COPY requirements.txt /stack-requirements.txt
 RUN pip install --no-cache-dir -r stack-requirements.txt
 
 RUN mkdir /app
-COPY addons_eggs /app/addons_eggs
-RUN chown nobody:nogroup -R /app/addons_eggs

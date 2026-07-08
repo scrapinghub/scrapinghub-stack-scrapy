@@ -130,8 +130,6 @@ lxml==6.1.1
     #   scrapy
 markupsafe==3.0.3
     # via jinja2
-monkeylearn==3.6.0
-    # via -r requirements.in
 more-itertools==11.1.0
     # via cssutils
 multidict==6.7.1
@@ -191,7 +189,6 @@ referencing==0.37.0
 requests==2.34.2
     # via
     #   -r requirements.in
-    #   monkeylearn
     #   premailer
     #   requests-file
     #   scrapinghub
@@ -259,7 +256,6 @@ service-identity==24.2.0
     # via scrapy
 six==1.17.0
     # via
-    #   monkeylearn
     #   python-dateutil
     #   rfc3339-validator
     #   scrapinghub
