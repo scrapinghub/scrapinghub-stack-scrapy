@@ -38,6 +38,8 @@ botocore==1.43.13
     #   awscli
     #   boto3
     #   s3transfer
+brotli==1.2.0
+    # via scrapy
 cachetools==7.1.4
     # via premailer
 certifi==2026.5.20
@@ -221,7 +223,7 @@ scrapinghub-entrypoint-scrapy==0.18.1
     # via
     #   -r requirements.in
     #   spidermon
-scrapy==2.17.0
+scrapy==2.18.0
     # via
     #   -r requirements.in
     #   scrapinghub-entrypoint-scrapy
