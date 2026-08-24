@@ -12,17 +12,10 @@ scrapinghub-entrypoint-scrapy==0.18.1
 scrapinghub>=2.4.0
 
 # scrapy plugins
-scrapy-splash
-scrapy-crawlera # legacy: the same as scrapy-zyte-smartproxy
-scrapy-zyte-smartproxy>=2.2.0
-scrapy-deltafetch
-scrapy-dotpersistence
 scrapy-magicfields
 scrapy-querycleaner
 scrapy-splitvariants
 
-# required by Monitoring addon
-spidermon[monitoring]
 # required by Images addon
 boto
 # pre-install boto3 compatible with botocore
