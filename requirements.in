@@ -31,6 +31,7 @@ boto3
 # address known vulnerabilities
 aiohttp>=3.7.4      # CVE-2021-21330
 awscli>=1.19.0      # fix pyyaml dependency
+brotli>=1.2.1       # CVE-2026-111497
 Jinja2>=2.11.3      # CVE-2020-28493
 lxml>=4.6.3         # CVE-2021-28957
 pillow>=8.1.2       # GHSA-jgpv-4h4c-xhw3
